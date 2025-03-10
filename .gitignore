@@ -1,0 +1,97 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.env
+.venv
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+
+# Rasa
+models/
+.rasa/
+*.tar.gz
+auth.yml
+*.db-shm
+*.db-wal
+story_graph.dot
+
+# Node/Frontend
+node_modules/
+/dist
+/build
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.next/
+.nuxt/
+.vuepress/dist
+.serverless/
+.fusebox/
+.dynamodb/
+.tern-port
+.lock-wscript
+
+# Development/Build files
+*.min.js
+*.min.css
+/dist/
+/build/
+.cache/
+.parcel-cache/
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+.project
+.classpath
+*.sublime-workspace
+*.sublime-project
+.settings/
+*.code-workspace
+
+# System Files
+.DS_Store
+Thumbs.db
+.directory
+Desktop.ini
+
+# Backend
+*.sqlite3
+*.db
+*.log
+media/
+static/
+__pycache__/
+*.pyc
+instance/
+.webassets-cache
+*.env
+.env.*
+!.env.example
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*~

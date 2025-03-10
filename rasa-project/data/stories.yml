@@ -1,0 +1,54 @@
+version: "3.1"
+
+stories:
+  - story: greet and ask admission requirements
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: admission_requirements
+      - action: utter_admission_requirements
+
+  - story: ask about JAMB score
+    steps:
+      - intent: admission_requirements_jamb
+      - action: utter_admission_requirements_jamb
+
+  - story: ask about Direct Entry
+    steps:
+      - intent: admission_requirements_direct_entry
+      - action: utter_admission_requirements_direct_entry
+
+  - story: application process flow
+    steps:
+      - intent: application_process
+      - action: utter_application_process
+
+  - story: ask fee structure
+    steps:
+      - intent: fees_and_scholarships
+      - action: utter_fees_and_scholarships_fees
+
+  - story: ask scholarships
+    steps:
+      - intent: fees_and_scholarships
+      - action: utter_fees_and_scholarships_scholarships
+
+  - story: thank you
+    steps:
+      - intent: thank_you
+      - action: utter_thank_you
+
+  - story: out of scope
+    steps:
+      - intent: out_of_scope
+      - action: utter_out_of_scope
+
+  - story: course details flow
+    steps:
+      - intent: course_details
+      - action: utter_course_details_duration
+
+  - story: compliance and regulations flow
+    steps:
+      - intent: compliance_and_regulations
+      - action: utter_compliance_and_regulations_rules

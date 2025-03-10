@@ -1,0 +1,138 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - Hi
+      - Hello
+      - Hey
+      - Good morning
+      - Good afternoon
+      - Good evening
+      - Hi there
+      - Hello, how are you?
+
+  - intent: goodbye
+    examples: |
+      - Bye
+      - Goodbye
+      - See you later
+      - Take care
+      - Bye for now
+      - Have a nice day
+      - Catch you later
+      - See you soon
+
+  - intent: admission_requirements
+    examples: |
+      - What are the admission requirements for Computer Science?
+      - How can I apply for Computer Science?
+      - What do I need to apply for Computer Science?
+      - What are the requirements for admission?
+      - What qualifications do I need for Computer Science?
+      - What documents are required for admission?
+      - What are the entry requirements for Computer Science?
+
+  - intent: admission_requirements_jamb
+    examples: |
+      - What is the minimum JAMB score required for Computer Science?
+      - Do I need to write JAMB for admission?
+      - What is the JAMB cutoff mark for Computer Science?
+      - How many JAMB points do I need?
+      - Can I get admission without JAMB?
+      - What if I scored below the required JAMB mark?
+      - Is there an alternative to JAMB?
+
+  - intent: admission_requirements_direct_entry
+    examples: |
+      - Does Babcock accept Direct Entry for Computer Science?
+      - What are the Direct Entry requirements?
+      - Can I use my diploma for admission?
+      - What qualifications do I need for Direct Entry?
+      - Do I need JAMB for Direct Entry?
+      - Can I apply with an ND or NCE?
+      - How does Direct Entry admission work?
+
+  - intent: application_process
+    examples: |
+      - How do I apply for admission at Babcock University?
+      - Can I apply online?
+      - Do I need to visit the campus to apply?
+      - Where can I obtain the application form?
+      - How much is the application form?
+      - What payment methods are accepted for application fees?
+      - How do I check my admission status?
+
+  - intent: course_details
+    examples: |
+      - What is the duration of the Computer Science program?
+      - What are the key courses covered in Computer Science?
+      - Can you tell me about the Computer Science program?
+      - What subjects are taught in Computer Science?
+      - Are there any specializations in Computer Science?
+      - Does the program include internships?
+      - What career opportunities are available after graduation?
+
+  - intent: fees_and_scholarships
+    examples: |
+      - What is the school fee structure for Computer Science?
+      - Are there scholarships available for Computer Science students?
+      - How much is the tuition fee for Computer Science?
+      - Can I get a scholarship for Computer Science?
+      - Are there any financial aid options?
+      - What are the different tuition payment plans?
+      - Are there discounts for early payments?
+
+  - intent: compliance_and_regulations
+    examples: |
+      - What are the school rules and regulations I need to follow?
+      - Does Babcock University have a dress code?
+      - Is accommodation mandatory for students?
+      - What happens if I fail a course?
+      - Are there any penalties for breaking school rules?
+      - Are there any specific rules for fresh students?
+      - Can students leave campus freely?
+
+  - intent: thank_you
+    examples: |
+      - Thanks
+      - Thank you
+      - Appreciate it
+      - Thanks a lot
+      - Thank you so much
+      - I appreciate your help
+      - Thanks for the information
+      - Thank you for your assistance
+
+  - intent: out_of_scope
+    examples: |
+      - What's the weather like?
+      - Tell me a joke
+      - Who won the World Cup?
+      - What is the capital of France?
+      - Can you recommend a good movie?
+      - What is your favorite color?
+      - How old are you?
+      - What is the meaning of life?
+
+  - intent: affirm
+    examples: |
+      - Yes
+      - Sure
+      - Tell me more
+      - Absolutely
+      - Of course
+      - Definitely
+      - Yes, please
+      - Go ahead
+
+  - intent: deny
+    examples: |
+      - No
+      - Not now
+      - Maybe later
+      - I don't think so
+      - Not interested
+      - No, thanks
+      - Not at the moment
+      - I'll pass

@@ -1,0 +1,119 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - admission_requirements
+  - admission_requirements_jamb
+  - admission_requirements_direct_entry
+  - admission_requirements_awaiting_results
+  - admission_requirements_age
+  - application_process
+  - application_process_form
+  - application_process_fee
+  - application_process_online
+  - application_process_payment
+  - application_process_status
+  - application_process_after_submission
+  - application_deadline
+  - course_details
+  - course_details_duration
+  - course_details_key_courses
+  - course_details_specializations
+  - course_details_internships
+  - course_details_career_prospects
+  - fees_and_scholarships
+  - fees_and_scholarships_fees
+  - fees_and_scholarships_scholarships
+  - compliance_and_regulations
+  - compliance_and_regulations_rules
+  - compliance_and_regulations_dress_code
+  - compliance_and_regulations_accommodation
+  - compliance_and_regulations_fail_course
+  - thank_you
+  - out_of_scope
+  - affirm
+  - deny
+
+responses:
+  utter_iamabot:
+    - text: "I am BUCC Admission Chatbot. How can I assist you?"
+  utter_greet:
+    - text: "Hello! How can I assist you with your admission enquiry?"
+  utter_goodbye:
+    - text: "Goodbye! Feel free to reach out if you have more questions."
+  utter_thank_you:
+    - text: "You're welcome! Let me know if you need further assistance."
+  utter_out_of_scope:
+    - text: "I'm sorry, I don't have that information. Please contact the admissions office directly."
+
+  # Admission Requirements
+  utter_admission_requirements:
+    - text: "You need five SSCE credit passes, including English, Mathematics, Physics, and two other relevant Science subjects, in not more than two sittings."
+  utter_admission_requirements_jamb:
+    - text: "Yes, you need to write JAMB and score at least 170 to be eligible for admission."
+  utter_admission_requirements_direct_entry:
+    - text: "Yes, Babcock University accepts Direct Entry. You need a minimum of a credit at the University/National Diploma or NCE, along with five SSCE credit passes in relevant science subjects."
+  utter_admission_requirements_awaiting_results:
+    - text: "Yes, you can apply with awaiting results, but you must provide the results before the admission process is completed."
+  utter_admission_requirements_age:
+    - text: "Applicants must be at least 16 years old to be eligible for admission."
+
+  # Application Process
+  utter_application_process:
+    - text: "You can apply by visiting the admissions portal at [https://admission.babcock.edu.ng](https://admission.babcock.edu.ng)."
+  utter_application_process_form:
+    - text: "The application form is available online at [https://admission.babcock.edu.ng](https://admission.babcock.edu.ng)."
+  utter_application_process_fee:
+    - text: "The application form costs ₦2,000."
+  utter_application_process_online:
+    - text: "You can apply online at [https://admission.babcock.edu.ng](https://admission.babcock.edu.ng)."
+  utter_application_process_payment:
+    - text: "You can pay the application fee online or via bank transfer."
+  utter_application_process_status:
+    - text: "You can check your admission status on the admissions portal."
+  utter_application_process_after_submission:
+    - text: "After submitting your application, you will be invited for a screening exercise if you meet the requirements."
+  utter_application_deadline:
+    - text: "The deadline for Fall 2024 is June 30, 2024."
+
+  # Course Details
+  utter_course_details_duration:
+    - text: "The Computer Science program lasts for four years."
+  utter_course_details_key_courses:
+    - text: "Key courses include Programming, Data Structures, Algorithms, and Artificial Intelligence."
+  utter_course_details_specializations:
+    - text: "Babcock University offers specializations in areas like Artificial Intelligence and Data Science."
+  utter_course_details_internships:
+    - text: "Yes, internship opportunities are available for Computer Science students."
+  utter_course_details_career_prospects:
+    - text: "Graduates can pursue careers as Software Developers, Data Scientists, and more."
+
+  # Fees and Scholarships
+  utter_fees_and_scholarships_fees:
+    - text: "The tuition fee for 100 Level is ₦1,286,283.70 (Full Year), and for 200 Level, it’s ₦836,084.41 (1st Semester)."
+  utter_fees_and_scholarships_scholarships:
+    - text: "Yes, scholarships are available for top-performing students."
+
+  # Compliance and Regulations
+  utter_compliance_and_regulations_rules:
+    - text: "Babcock University has specific rules, including a dress code and mandatory accommodation for fresh students."
+  utter_compliance_and_regulations_dress_code:
+    - text: "Yes, Babcock University has a dress code that all students must follow."
+  utter_compliance_and_regulations_accommodation:
+    - text: "Yes, accommodation is mandatory for fresh students."
+  utter_compliance_and_regulations_fail_course:
+    - text: "If you fail a course, you will need to retake it to meet the graduation requirements."
+
+  # Affirm & Deny
+  utter_affirm:
+    - text: "Sure! Here are more details:"
+  utter_deny:
+    - text: "Alright, let me know if you need anything else!"
+
+actions:
+  - action_default_fallback
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
