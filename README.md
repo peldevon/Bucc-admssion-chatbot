@@ -14,7 +14,7 @@ An AI-powered chatbot designed to assist prospective students with admission-rel
 
 ## Setup Instructions
 ### 1. Clone the Repository
-git clone https://github.com/your-username/admission-chatbot.git
+git clone https://github.com/peldevon/Bucc-admssion-chatbot.git
 cd bucc-chatbot
 
 ### 2. Virtual Environment Creation & Backend Setup
