@@ -76,7 +76,7 @@ function ChatInterface() {
   // Scroll to bottom when messages change
   useEffect(() => {
     scrollToBottom()
-  }, [messages]) //Corrected dependency
+  }, [messages])
 
   return (
     <div className="fixed bottom-4 right-4 z-50">
